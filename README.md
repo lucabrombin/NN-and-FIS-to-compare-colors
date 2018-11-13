@@ -1,1 +1,0 @@
-# NN-and-FIS-to-compare-colors
