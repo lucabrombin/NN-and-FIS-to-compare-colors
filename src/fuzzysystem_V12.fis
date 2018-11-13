@@ -1,0 +1,76 @@
+[System]
+Name='fuzzysystem_V12'
+Type='mamdani'
+Version=2.0
+NumInputs=4
+NumOutputs=1
+NumRules=14
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='L'
+Range=[0 100]
+NumMFs=3
+MF1='scuro':'zmf',[0 15]
+MF2='chiaro':'smf',[85 100]
+MF3='medio':'gbellmf',[40 20 50]
+
+[Input2]
+Name='C'
+Range=[0 100]
+NumMFs=2
+MF1='insaturo':'zmf',[9.2 90.2]
+MF2='saturo':'smf',[10.25 90.4]
+
+[Input3]
+Name='h'
+Range=[0 360]
+NumMFs=8
+MF1='rosso':'dsigmf',[0.2167 22 -0.19 340]
+MF2='giallo':'gaussmf',[22 90]
+MF3='arancione':'gaussmf',[15 45]
+MF4='verde-giallo':'gaussmf',[15 135]
+MF5='blu-verde':'gaussmf',[15 225]
+MF6='blu':'gaussmf',[19 270]
+MF7='verde':'gaussmf',[20 180]
+MF8='viola':'gaussmf',[19 315]
+
+[Input4]
+Name='DE'
+Range=[0 8]
+NumMFs=5
+MF1='uguale':'zmf',[0.1 0.9]
+MF2='esperto':'gaussmf',[0.3185 1.25]
+MF3='inesperto':'gaussmf',[0.4247 2.5]
+MF4='visibile':'gaussmf',[0.3907 4.09]
+MF5='diversi':'sigmf',[7.24 5.045]
+
+[Output1]
+Name='output1'
+Range=[0 8]
+NumMFs=5
+MF1='uguali':'zmf',[0.1 0.9]
+MF2='esperto':'gaussmf',[0.3185 1.25]
+MF3='inesperto':'gaussmf',[0.4247 2.5]
+MF4='visibile':'gaussmf',[0.3907 4.09]
+MF5='diversi':'sigmf',[7.24 5.045]
+
+[Rules]
+1 0 0 0, 1 (1) : 1
+3 2 2 3, 2 (1) : 1
+3 2 2 4, 3 (1) : 1
+3 2 6 2, 3 (1) : 1
+3 2 6 3, 4 (1) : 1
+3 2 8 2, 3 (1) : 1
+3 2 8 3, 4 (1) : 1
+3 1 0 2, 3 (1) : 1
+3 1 0 3, 4 (1) : 1
+0 0 0 1, 1 (1) : 1
+0 0 0 2, 2 (1) : 1
+0 0 0 3, 3 (1) : 1
+0 0 0 4, 4 (1) : 1
+3 2 2 5, 3 (1) : 1

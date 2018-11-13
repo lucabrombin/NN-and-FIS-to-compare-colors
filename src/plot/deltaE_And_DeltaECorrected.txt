@@ -1,0 +1,10 @@
+Difefrenza con la 1 copia: 6.536316e-01 - 1.699411e+00
+Difefrenza con la 2 copia: 1.666731e+00 - 2.364670e+00
+Difefrenza con la 3 copia: 1.513541e+00 - 2.124525e+00
+Difefrenza con la 4 copia: 5.487775e-02 - 2.674010e-01
+Difefrenza con la 5 copia: 3.314776e+00 - 3.253166e+00
+Difefrenza con la 6 copia: 2.589911e+00 - 3.259698e+00
+Difefrenza con la 7 copia: 3.153093e+00 - 3.256739e+00
+Difefrenza con la 8 copia: 6.029471e-01 - 1.489103e+00
+Difefrenza con la 9 copia: 7.561343e-02 - 2.705123e-01
+Difefrenza con la 10 copia: 1.142958e+00 - 1.988993e+00
